@@ -8,11 +8,59 @@
         width: 1226px;
         height: 460px;
         margin: 0 auto;
+        position: relative;
         img{
             width: 1226px;
             position: relative;
             z-index: 1;
             display: none;
+        }
+        .banner-lbtn{
+            background: url('../pic/icon-slides.png') no-repeat -83px 0;
+            height: 69px;
+            width: 41.5px;
+            position: absolute;
+            left: 234px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 20;
+        }
+        .banner-lbtn:hover{
+            background-position: 0 0;
+        }
+        .banner-rbtn{
+            background: url('../pic/icon-slides.png') no-repeat -124.5px 0;
+            height: 69px;
+            width: 41.5px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 20;
+        }
+        .banner-rbtn:hover{
+            background-position: -41.5px 0;
+
+        }
+        .dots{
+            position: absolute;
+        right: 20px;
+        bottom: 15px;
+        z-index: 20;
+            span {
+                margin-right: 5px;
+                float: left;
+                border-radius: 50%;
+                width: 10px;
+                height: 10px;
+                background-color: #ccc;
+            }
+            span:hover {
+                background-color: #666;
+            }
+            span.square {
+                background-color: #666;
+            }
         }
     }
 }
