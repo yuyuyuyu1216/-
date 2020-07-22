@@ -1,0 +1,181 @@
+body {
+    font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+}
+
+
+/* 顶部代码 */
+
+.page-top {
+    height: 40px;
+    background-color: #333333;
+}
+
+.page-top .container {
+    width: 1226px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+}
+
+.page-top .top-lt a {
+    float: left;
+    color: #b0b0b0;
+}
+
+.page-top .top-lt span {
+    float: left;
+    color: #424242;
+    padding: 0 3px;
+}
+
+.page-top .top-lt a:hover {
+    color: #ffffff;
+}
+
+.page-top .top-lt .download {
+    position: relative;
+}
+
+.page-top .top-lt .down-box {
+    display: none;
+    width: 126px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -63px;
+    top: 40px;
+    padding-top: 20px;
+    box-shadow: 0 1px 5px #aaa;
+    text-align: center;
+}
+
+.page-top .top-lt .down-box img {
+    display: block;
+    width: 88px;
+    height: 88px;
+    margin: 0 auto;
+}
+
+.page-top .top-lt .down-box b {
+    width: 20px;
+    height: 13px;
+    background: url(../pic/sanjiao.png);
+    position: absolute;
+    left: 50%;
+    top: -13px;
+    margin-left: -10px;
+}
+
+.page-top .top-lt .down-box i {
+    font-style: normal;
+    font-size: 13px;
+    color: #424242;
+}
+
+.page-top .top-lt a.download:hover i {
+    color: #424242;
+}
+
+.page-top .top-lt a.download:hover .down-box {
+    display: block;
+}
+
+.page-top .top-rt {
+    float: right;
+}
+
+.page-top .top-rt .login a {
+    float: left;
+    color: #b0b0b0
+}
+
+.page-top .top-rt .login span {
+    float: left;
+    color: #424242;
+    padding: 0 3px;
+}
+
+.page-top .top-rt .login {
+    float: right;
+    margin-right: 20px;
+}
+
+.page-top .top-rt .shopping-cart {
+    width: 118px;
+    height: 40px;
+    background-color: #424242;
+    float: right;
+    /* margin-left: 20px; */
+}
+
+.page-top .top-rt .userinfo {
+    float: right;
+    margin-right: 20px;
+}
+
+.page-top .top-rt .userinfo .user {
+    width: 120px;
+    display: inline-block;
+    position: relative;
+}
+
+.page-top .top-rt .userinfo .user .tit {
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    position: relative;
+    z-index: 5;
+}
+
+.page-top .top-rt .userinfo .user:hover {
+    background-color: #ffffff;
+}
+
+.page-top .top-rt .userinfo .user:hover .tit {
+    color: #ff6700;
+}
+
+.page-top .top-rt .userinfo .user:hover ul {
+    display: block;
+}
+
+.page-top .top-rt .userinfo .user ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 120px;
+    padding: 10px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.page-top .top-rt .userinfo li {
+    line-height: 30px;
+    text-align: center;
+}
+
+.page-top .top-rt .userinfo li:hover {
+    background-color: #f5f5f5;
+}
+
+.page-top .top-rt .userinfo li a {
+    display: block;
+    width: 120px;
+    color: #424242;
+}
+
+.page-top .top-rt .userinfo li:hover a {
+    color: #ff6700;
+}
+
+.page-top .top-rt .userinfo a {
+    /* float: left; */
+    color: #b0b0b0;
+}
+
+.page-top .top-rt .userinfo span {
+    color: #424242;
+    padding: 0 3px;
+}

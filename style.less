@@ -1,0 +1,430 @@
+@topbarh:40px;
+@topbarbgc:#333333;
+@topbara_c:#b0b0b0;
+@topbarspan_c:#424242;
+@zhuticolor:#ee6700;
+@content-w:1226px;
+body{
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+}
+
+// 公共样式
+// 顶部开始
+.page-top{
+    height: @topbarh;
+    background-color: @topbarbgc;
+    // 顶部内容容器
+    .container{
+        width: 1226px;
+        margin: 0 auto;
+        line-height: @topbarh;
+        // 顶部左侧
+        .top-lt{
+            float: left;
+            a{  float: left;
+                font-size: 12px;
+                color: @topbara_c;
+            }
+            span{
+                float: left;
+                font-size: 12px;
+                color: @topbarspan_c;
+                padding: 0 7px;
+                font-family: sans-serif;
+            }
+            a:hover{
+                color: #ffffff;
+            }
+            .download{
+                position: relative;
+                .down-box{
+                    display: none;
+                    position: absolute;
+                    transition: all 2s;
+                    width: 126px;
+                    top: 40px;
+                    left: 50%;
+                    margin-left: -63px;
+                    text-align: center;
+                    box-shadow: 0 1px 5px #aaa;
+                    padding-top: 20px;
+                    background-color: #ffffff;
+                    z-index: 8;
+                    img{
+                        display: block;
+                        width: 88px;
+                        height: 88px;
+                        margin: 0 auto;
+                    }
+                    b{
+                        width: 20px;
+                        height: 13px;
+                        background: url(./pic/sanjiao.png);
+                        position: absolute;
+                        left: 50%;
+                        top: -13px;
+                        margin-left: -10px;
+                    }
+                    i{
+                        color: #333333;
+                    }
+                }
+            }
+            .download:hover{
+                .down-box{
+                    display: block;
+                }
+            }
+        }
+        // 顶部右侧
+        .top-rt{
+            float: right;
+
+            a{  float: left;
+                font-size: 12px;
+                color: @topbara_c;
+                padding: 0 .6px;
+            }
+            span{
+                float: left;
+                font-size: 12px;
+                color: @topbarspan_c;
+                padding: 0 3.6px;
+                font-family: sans-serif;
+            }
+            // 购物车部分
+            .shopping-cart{
+                width: 120px;
+                height: @topbarh;
+                line-height: @topbarh;
+                float: right;
+                margin-left: 15px;
+                background-color: #424242;
+                text-align: center;
+                position: relative;
+                z-index: 5;
+                a{ 
+                    float: none;
+                    display: block;
+                    em{
+                        font-size: 18px;
+                        line-height: 18px;
+                        margin-left: 4px;
+                    }
+                    span{
+                        color: @topbara_c;
+                        float: none;
+                    }
+                }
+                 .shoppinglist{
+                     display: none;
+                     width: 316px;
+                     height: 80px;
+                     background-color:#ffffff;
+                     box-shadow: 0 5px 10px rgba(0,0,0,.15);
+                     position: absolute;
+                     right: 0;
+                     text-align: center;
+                     line-height: 80px;
+                 }   
+            }
+            .shopping-cart:hover{
+                background-color: #ffffff;
+                .shoppinglist{
+                    display: block;
+                }
+                a{
+                    color: @zhuticolor;
+                }
+                span{
+                    color: @zhuticolor;
+                }
+                em{
+                    color: @zhuticolor;
+                }
+            }
+            .login{
+                float: right;
+                a.message{
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}
+//顶部结束
+//头部导航栏开始
+.header{
+    // position: relative;
+    height: 100px;
+    .header-content{
+        width: @content-w;
+        // background-color: #dddddd;
+        height: 100px;
+        margin: 0 auto;
+        position: relative;
+        //导航栏logo
+        .header-logo{
+            position: absolute;
+            top: 22px;
+            width: 62px;
+            height: 55px;
+            a{
+                // background: url(./pic/mi-logo.png);
+                display: block;
+                height: 55px;
+                line-height: 55px;
+                width: 55px;
+                background-color: @zhuticolor;
+                color: #ffffff;
+                font-size: 35px;
+                text-align: center;
+            }
+        }
+        //导航栏内容
+        .header-nav{
+            position: absolute;
+            // left: 234px;
+            left: 62px;
+            ul{
+                line-height: 100px;
+                float: left;
+                li{
+                    float: left;
+                    // padding: 26px 10px 38px;
+                    padding: 0 10px;
+                    a{ 
+                        display: block;
+                        font-size: 16px;
+                    }
+                    a:hover{
+                        color: #df6e2b;
+                        transition: all 0.4s;
+                    }
+                }
+                //竖导航栏
+                li.all-nav{
+                    // position: relative;
+                    // display: block;
+                    width: 127px;
+                    height: 100px   ;
+                    padding:0 15px 0 30px;
+                    .all-nav-content{
+                        width: 234px;
+                        height: 460px;
+                        position: absolute;
+                        left: -62px;
+                        top: 100px;
+                        background-color:rgba(105,101,101,.6);
+                        z-index: 5;
+                        ul{
+                            padding: 20px 0;
+                            li{
+                                float: none;
+                                width: 234px;
+                                height: 42px;
+                                padding: 0;
+                                a{
+                                    position: relative;
+                                    font-size: 14px;
+                                    color: #ffffff;
+                                    line-height: 42px;
+                                    padding-left:30px;
+                                }
+                                .all-nav-a:hover{
+                                    background-color: @zhuticolor;
+                                    +.child-list{
+                                        display: block;
+                                    }
+                                }
+                                .child-list:hover{
+                                    display: block;
+                                }
+
+                                em{
+                                    position: absolute;
+                                    top: 9px;
+                                    right: 20px;
+                                    line-height: 24px;
+                                    font-size: 24px;
+                                    color: #ffffff;
+                                }
+                                .child-list{
+                                    display: none;
+                                    position: absolute;
+                                    width: 992px;
+                                    left: 234px;
+                                    top: 0;
+                                    background-color: #ffffff;
+                                    box-shadow: 0 8px 16px rgba(0,0,0,.18);
+                                    ul{
+                                        width: 248px;
+                                        padding: 2px 0;
+                                        li{
+                                            width: 265px;
+                                            height: 76px;
+                                            a{
+                                                // display: block;
+                                                padding: 17px 20px;
+                                                line-height: 40px;
+                                                height: 40px;
+                                                img{
+                                                    float: left;
+                                                    width: 40px;
+                                                    height: 40px;
+                                                    line-height: 40px;
+                                                    margin-right: 12px;
+                                                }
+                                                span{
+                                                    float: left;
+                                                    width: 172px;
+                                                    line-height: 40px;
+                                                    font-size: 14px;
+                                                    color: #333333;
+                                                }
+                                            }
+                                            a:hover{
+                                                background-color: none;
+                                                span{
+                                                    color: @zhuticolor;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // 搜索栏样式
+        .header-search-pub{
+            position: absolute;
+            right: 0;
+            height: 50px;
+            margin-top: 25px;
+            form{
+                display: block;
+                position: relative;
+                width: 296px;
+                height: 50px;
+                // border: 1px solid #e0e0e0;
+                .search-inp{
+                    width: 225px;
+                    height: 48px;
+                    border: none;
+                    // border-right: 1px solid #e0e0e0;
+                    font-size: 14px;
+                    padding: 0 10px;
+                    border: 1px solid #e0e0e0;
+                    
+                }
+                .submitbtn{
+                    float: right;
+                    // width: 50px;
+                    // height: 50px;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    cursor: pointer;
+                    .search-sub{
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        width: 50px;
+                        height: 50px;
+                        background-color: #ffffff;
+                        border: none;
+                        border: 1px solid #e0e0e0;
+                    }
+                    span{
+                        position: absolute;
+                        display: block;
+                        width: 50px;
+                        height: 50px;
+                        line-height: 50px;
+                        right: 0;
+                        top: 0;
+                        text-align: center;
+                        font-size: 25px;
+                        font-weight: 700;
+                    }
+                }
+                .submitbtn:hover{
+                    .search-sub{
+                    background-color: @zhuticolor;
+                    border-color: @zhuticolor;
+                    }
+                    span{
+                        color: #ffffff;
+                    }
+                }
+                .hot{
+                    position: absolute;
+                    border:1px solid @zhuticolor;
+                    width: 245px;
+                    top: 49px;
+                        li{
+                            // padding-top:5px;
+                            a{
+                                display: block;
+                                height: 30px;
+                                line-height: 30px;
+                                padding-left: 15px;
+                                font-size: 12px;
+                            }
+                        }
+                        li:hover{
+                            background-color: #fafafa;
+                        }
+                    
+                }
+            }
+        }
+        .header-search{
+            .header-search-pub;
+            form:hover{
+                border-color:#b0b0b0;
+                .search-inp{
+                    border-color: #b0b0b0;
+                }
+                .search-sub{
+                    border-color: #b0b0b0;
+                }
+            }
+            .hot{
+                display: none;
+            }
+        }
+        .header-search-active{
+            .header-search-pub;
+            form{
+                .search-inp{
+                    border-color: @zhuticolor;
+                }
+                .submitbtn{
+                    .search-sub{
+                    border-color: @zhuticolor;
+                    }
+                }
+            }
+            .hot{
+                display: block;
+            }
+        }
+    }
+}
+//头部导航栏结束
+// 清除浮动clearfix
+.clearfix:after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: "";
+    clear: both;
+    height: 0;
+}
+.clearfix{
+    *zoom: 1;
+}
